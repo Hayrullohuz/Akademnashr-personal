@@ -107,6 +107,7 @@ body {
   padding-bottom: 210px;
 }
 .fut-head {
+  margin-top: 0;
   margin-bottom: 72px;
   width: 440px;
   font-size: 72px;
@@ -117,6 +118,9 @@ body {
   font-size: 24px;
   line-height: 1.2;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+}
+.future:last-child {
+  margin: 0;
 }
 .future-icon {
   margin: 0;
@@ -130,11 +134,12 @@ body {
 }
 .future {
   width: 340px;
+  margin-right: 40px;
 }
 /* Promo */
 .footer-icons {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
 }
@@ -150,11 +155,17 @@ body {
   width: 440px;
 }
 .promo-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
 }
+
 .promo-highlight {
   color: #ff7500;
+}
+.promo-text {
+  
 }
 .promo-img {
   width: 440px;
