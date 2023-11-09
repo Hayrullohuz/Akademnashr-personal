@@ -4,8 +4,14 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   letter-spacing: 0.5px;
 }
+*:focus {
+  outline: 2px dotted #ff7500;
+}
 /* header */
 .site-header{
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +37,8 @@ body {
   color: #252420;
   transition: color 0.4s ease,
   opacity 0.4s ease;
+  padding: 0;
+  margin-right: 30px;
 }
 .list:hover {
   color: #ff7500;
@@ -39,7 +47,10 @@ body {
   opacity: 0.6;
 }
 .main-link {
+  border-radius: 4px;
+  padding: 12px 24px;
   font-size: 13px;
+  font-weight: bold;
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -59,6 +70,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #252420;
   color: white;
 }
@@ -69,27 +82,36 @@ body {
   width: 80px;
   height: 3px;
   background-color: #ff7500;
+  border: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 .hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 1.2;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
+.hero-text {
+  margin-bottom: 32px;
+}
 .hero-img {
   width: 510px;
   height: 510px;
+  border-radius: 10px;
 }
 /* Future */
+.features {
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .fut-head {
+  margin-bottom: 72px;
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
-}
-.footer-icons {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
 }
 .future-hed {
   font-size: 24px;
@@ -97,6 +119,7 @@ body {
   font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
 .future-icon {
+  margin: 0;
   width: 100px;
   height: 100px;
   background-color: rgba(255,117,0,0.2);
@@ -109,12 +132,19 @@ body {
   width: 340px;
 }
 /* Promo */
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
 .promo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #252420;
   color: #fff;
+  border-radius: 12px;
 }
 .promo-content {
   width: 440px;
@@ -130,14 +160,18 @@ body {
   width: 440px;
   height: 440px;
   object-fit: cover;
+  border-radius: 12px;
 }
 /* footer */
 .footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #f8f8f8;
 }
 .footer-line {
   background-color: rgba(37,36,32,0.5);
   height: 2px;
+  border: none;
 }
 .footer-section {
   display: flex;
@@ -148,6 +182,7 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 .icons a:hover {
   color: #ff7500;
@@ -170,6 +205,6 @@ body {
 .footer-liks a:hover {
   color: #ff7500;
 }
-.footer-liks a:focus {
+.footer-liks a:active {
   opacity: 0.6;
 }
